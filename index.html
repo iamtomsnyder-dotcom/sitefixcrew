@@ -102,6 +102,25 @@ header{background:var(--navy);color:var(--navy-ink)}
 .new .n-strip div:last-child{border-right:0}
 .ba-col ul{margin:0;padding-left:1.2em;display:grid;gap:4px}
 .sample-note{margin-top:20px;font-size:.88rem;color:var(--muted)}
+.more-samples{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.pair{display:grid;gap:12px;min-width:0}
+.pair-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pair .screen{aspect-ratio:3/4}
+.pair .old,.pair .new{font-size:.85em}
+.pair .old .o-body{grid-template-columns:1fr}
+.pair .old .o-img{min-height:40px}
+.pair .new .n-hero b{font-size:1.15rem}
+.pair .new .n-strip{grid-template-columns:1fr}
+.pair .new .n-strip div{border-right:0;border-top:1px solid rgba(255,255,255,.15);padding:6px 4px}
+.old-blue{background:#dfe6f2;font-family:Arial,sans-serif}
+.old-blue .o-title{color:#0b2a8a;text-decoration:none}
+.old-blue .o-marq{background:#ff9933}
+.old-green{background:#eef3d9;font-family:"Comic Sans MS","Comic Sans",cursive}
+.old-green .o-title{color:#2f6b12}
+.old-green .o-marq{background:#ccff66}
+.new-teal{background:#0f3a40}
+.new-green{background:#1f3a24}
+@media (max-width:860px){.more-samples{grid-template-columns:1fr}}
 @media (max-width:760px){.ba-grid{grid-template-columns:1fr}}
 
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
@@ -243,7 +262,75 @@ footer .wrap{padding-block:26px;opacity:.8}
           </ul>
         </div>
       </div>
-      <p class="sample-note">Ridgeline Roofing is a made-up example to show the difference.</p>
+      <div class="more-samples">
+        <div class="pair">
+          <h3>Plumber</h3>
+          <div class="pair-grid">
+            <div class="ba-col">
+              <span class="tag before">Before</span>
+              <div class="screen" aria-hidden="true">
+                <div class="old old-blue">
+                  <div class="o-title">BAYSIDE PLUMBING &amp; HEATING INC.</div>
+                  <div class="o-marq">Licensed &amp; Insured ** No Job Too Small ** Click Here For Coupons</div>
+                  <div class="o-body">
+                    <div>Welcome! Bayside Plumbing has been proudly serving our customers with quality plumbing work. Please see our services page for a list of services. To contact us please see the contact page...</div>
+                    <div class="o-img"></div>
+                  </div>
+                  <div class="o-foot">You are visitor #004,211</div>
+                </div>
+              </div>
+            </div>
+            <div class="ba-col">
+              <span class="tag after">After</span>
+              <div class="screen" aria-hidden="true">
+                <div class="new new-teal">
+                  <div class="n-top">Bayside Plumbing <span class="n-call">Call 24/7</span></div>
+                  <div class="n-hero">
+                    <span class="n-stars">★★★★★ 4.8 from 340 reviews</span>
+                    <b>Burst pipe? Clogged drain? We answer day or night.</b>
+                    <span>Upfront prices before we start. No overtime charge on weekends.</span>
+                  </div>
+                  <div class="n-strip"><div>24/7 emergency</div><div>Upfront pricing</div><div>Water heaters</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pair">
+          <h3>Landscaper</h3>
+          <div class="pair-grid">
+            <div class="ba-col">
+              <span class="tag before">Before</span>
+              <div class="screen" aria-hidden="true">
+                <div class="old old-green">
+                  <div class="o-title">~ Greenway Lawn Service ~</div>
+                  <div class="o-marq">NOW BOOKING SPRING CLEANUPS!!! (updated 2019)</div>
+                  <div class="o-body">
+                    <div>We offer mowing, mulch, hedges, leaf removal and snow plowing in the winter. For a free estimate please fill out the form and we will get back to you as soon as possible. Thank you for visiting.</div>
+                    <div class="o-img"></div>
+                  </div>
+                  <div class="o-foot">Site under construction</div>
+                </div>
+              </div>
+            </div>
+            <div class="ba-col">
+              <span class="tag after">After</span>
+              <div class="screen" aria-hidden="true">
+                <div class="new new-green">
+                  <div class="n-top">Greenway Lawn <span class="n-call">Get a quote</span></div>
+                  <div class="n-hero">
+                    <span class="n-stars">★★★★★ 4.9 from 128 reviews</span>
+                    <b>A yard you're proud of, without lifting a finger.</b>
+                    <span>Weekly mowing, cleanups and mulch. Quote back in one business day.</span>
+                  </div>
+                  <div class="n-strip"><div>Weekly mowing</div><div>Spring cleanups</div><div>Snow removal</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="sample-note">Ridgeline Roofing, Bayside Plumbing and Greenway Lawn are made-up businesses. These are sample designs to show the kind of difference we make.</p>
     </div>
   </section>
 
