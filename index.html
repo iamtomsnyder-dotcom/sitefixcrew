@@ -138,6 +138,13 @@ header{background:var(--navy);color:var(--navy-ink)}
 .plan .who{color:var(--muted);font-size:.95rem}
 @media (max-width:860px){.plans{grid-template-columns:1fr}}
 
+.np{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.np-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.np-card{border:2px solid var(--ink);border-top:6px solid var(--hivis);border-radius:6px;padding:26px;display:grid;gap:12px}
+.np-card ul{margin:0;padding-left:1.1em;display:grid;gap:6px}
+.np-card .who{color:var(--muted)}
+.np-card .btn{justify-self:start}
+@media (max-width:760px){.np-grid{grid-template-columns:1fr}}
 .faq{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .faq h3{font-size:1.3rem;margin-bottom:6px}
 .faq p{color:var(--muted)}
@@ -385,6 +392,25 @@ footer .wrap{padding-block:26px;opacity:.8}
             <li>Cancel anytime</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="np">
+    <div class="wrap np-grid">
+      <div class="head" style="margin-bottom:0">
+        <h2>Nonprofit rate</h2>
+        <p class="lede">Food pantries, youth leagues, veterans posts, fire departments, animal rescues and churches do important work on small budgets. We build their sites at half price.</p>
+      </div>
+      <div class="np-card">
+        <div class="price">$750</div>
+        <p class="who">Full site, plus $50/month for hosting and updates</p>
+        <ul>
+          <li>Donate and volunteer sign-up buttons</li>
+          <li>Event calendar you can update by text or email</li>
+          <li>Works on every phone</li>
+        </ul>
+        <a class="btn btn-hivis" href="#contact">Ask about the nonprofit rate</a>
       </div>
     </div>
   </section>
